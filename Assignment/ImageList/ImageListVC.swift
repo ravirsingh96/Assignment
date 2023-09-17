@@ -54,7 +54,6 @@ class ImageListVC: UIViewController {
            }
        }
     
-    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let height = scrollView.frame.size.height
         let contentYOffset = scrollView.contentOffset.y

@@ -27,7 +27,6 @@ final class ViewControllerHelper {
         case main = "Main"
     }
     
-    
     class func getObjectOf<T: UIViewController>(of name: ViewControllerName, of type: T.Type = UIViewController.self as! T.Type ) -> T {
         
         let storyBoard = UIStoryboard.init(name: name.getStoryBoard().rawValue, bundle: nil)

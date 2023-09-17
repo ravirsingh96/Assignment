@@ -51,7 +51,6 @@ class NetworkManager {
                 let c = try JSONSerialization.jsonObject(with: baseResponse, options: .mutableContainers)
                 print(c)
                 let d = try JSONDecoder().decode(RootResponseModel<R>.self, from: baseResponse)
-        //        print(d)
                 return d.hits
             })
             .eraseToAnyPublisher()

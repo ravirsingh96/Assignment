@@ -27,8 +27,6 @@ class ProfileVC: UIViewController {
         email.text = "dummy@yopmail.com"
         gender.text = "Male"
         profileImage.image = UIImage(named: "avatar")
-        
-        
     }
     
     @IBAction func imagePicker(_ sender: UIButton) {

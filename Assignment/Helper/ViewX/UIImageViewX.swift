@@ -12,7 +12,6 @@ import UIKit
 class UIImageViewX: UIImageView {
     
     // MARK: - Properties
-    
     @IBInspectable public var borderColor: UIColor = UIColor.clear {
         didSet {
             layer.borderColor = borderColor.cgColor

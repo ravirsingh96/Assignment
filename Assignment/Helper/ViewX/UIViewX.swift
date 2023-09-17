@@ -35,7 +35,6 @@ class UIViewX: UIView {
             return CAGradientLayer.self
         }
     }
-    
     func updateView() {
         let layer = self.layer as! CAGradientLayer
         let f = firstColor == UIColor.clear ? UIColor.white.withAlphaComponent(0).cgColor : firstColor.cgColor

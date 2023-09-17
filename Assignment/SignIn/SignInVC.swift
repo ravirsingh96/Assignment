@@ -16,7 +16,6 @@ class SignInVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
     @IBAction func signInBtnTapped(_ sender: UIButton) {
         
         GIDSignIn.sharedInstance.signIn(withPresenting: self) { signInResult, error in

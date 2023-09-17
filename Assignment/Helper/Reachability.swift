@@ -11,6 +11,7 @@ class NetworkReachability {
     private var reachability: Reachability
     var isInternetReachable = false
     
+    
     private init() {
         self.reachability = try! Reachability()
     }

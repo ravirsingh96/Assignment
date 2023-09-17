@@ -75,7 +75,6 @@ class ImageListViewModel: ObservableObject {
     }
     
     // MARK: - Download image from url
-    
     func downloadImages() {
         offlineImages = []
         
