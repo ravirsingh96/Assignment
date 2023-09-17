@@ -10,10 +10,6 @@ import Reachability
 
 class NetworkManager {
     
-    // live url https://api.selrweb.com/
-    // api.selr.intellexio.com
-    
-   // static let baseURL = "https://picsum.photos"
     static let baseURL = "https://pixabay.com/api/?key=39465172-9b6a53f53f357bd30ef5861e6"
     
     enum Endpoint: String {
@@ -21,8 +17,6 @@ class NetworkManager {
     }
     
     static func request<R: Codable>(
-     //   endPoint: Endpoint,
-      //  urlFragment: String? = nil,
         method: HTTPMethod,
         payload: [String: String]? = nil,
         responseEncoder: R.Type

@@ -152,6 +152,7 @@ extension ImageListVC: UITableViewDelegate, UITableViewDataSource {
         if reachability.connection != .unavailable {
             let items = viewModel.images[indexPath.row]
             cell.dummyImage.sd_setImage(with: URL(string: items.previewURL ?? ""))
+            cell.name.text = items.tags
         } else {
             let item = viewModel.offlineImages[indexPath.row]
             cell.dummyImage.image = item.image
@@ -159,8 +160,5 @@ extension ImageListVC: UITableViewDelegate, UITableViewDataSource {
         return cell
         
     }
-    
-    
-    
     
 }
